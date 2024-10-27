@@ -1,6 +1,11 @@
-export { default as Menu } from './components/Menu';
-export { default as Button } from './components/Button';
-export { default as OrderManagement } from './components/OrderManagement';
-export { default as Inventory } from './components/Inventory';
-export { default as StaffManagement } from './components/StaffManagement';
-export { default as SalesReport } from './components/SalesReport';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import './styles.css'; // CSS file for global styles
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
